@@ -112,10 +112,10 @@
 
 			// Display the results
 			document.getElementById('result').innerHTML = `
-				<p>Control Conversion Rate: ${(controlConversionRate.toFixed(2))*100}%</p>
-				<p>Variation Conversion Rate: ${(variationConversionRate.toFixed(2))*100}%</p>
+				<p>Control Conversion Rate: ${(controlConversionRate.toFixed(4))*100}%</p>
+				<p>Variation Conversion Rate: ${(variationConversionRate.toFixed(4))*100}%</p>
 				<p>Deviation (from normsinv): ${deviation.toFixed(2)}</p>
-				<p>Error Rate: ${(error.toFixed(2))*100}%</p>
+				<p>Error Rate: ${(error.toFixed(3))*100}%</p>
 				<p>Required Sample Size: ${Math.ceil(minimalSample)}</p>
 				<p>Current Total Visitors: ${currentTotalVisitors}</p>
 				<b><p>Additional Visitors Needed: ${additionalVisitorsNeeded}</p></b>
